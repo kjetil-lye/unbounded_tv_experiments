@@ -1,0 +1,138 @@
+% This file was created by matplotlib2tikz v0.6.17.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+title={Convergence plot,
+ Equation: Cubic, Numerical flux: Rusanov, T = 0.00390625},
+xlabel={Number of cells ($M$)},
+ylabel={Error ($||\cdot||_{L^1([0,1])}$)},
+xmin=100.426764530784, xmax=20882.4013179988,
+ymin=0.000976673580754889, ymax=0.225804825605822,
+xmode=log,
+ymode=log,
+width=\figurewidth,
+height=\figureheight,
+tick align=outside,
+tick pos=left,
+xmajorgrids,
+x grid style={white!69.01960784313725!black},
+ymajorgrids,
+y grid style={white!69.01960784313725!black},
+legend cell align={left},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+legend entries={{fBm $H=0.125$},{$\mathcal{O}(M^{-0.27})$},{fBm $H=0.25$},{$\mathcal{O}(M^{-0.37})$},{fBm $H=0.5$},{$\mathcal{O}(M^{-0.53})$},{fBm $H=0.75$},{$\mathcal{O}(M^{-0.70})$}}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addlegendimage{no markers, color3}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table {%
+128 0.157807047066443
+256 0.146957998977095
+512 0.134289263186525
+1024 0.105770593265722
+2048 0.0835089457377539
+4096 0.0672042182317668
+8192 0.0589874869856511
+16384 0.0440493402757958
+};
+\addplot [semithick, color0, dashed]
+table {%
+128 0.176311000839087
+256 0.146063202358729
+512 0.121004696143481
+1024 0.100245210650766
+2048 0.0830472087339554
+4096 0.0687996846306035
+8192 0.0569964563220192
+16384 0.0472181820412416
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table {%
+128 0.128664477027085
+256 0.110876889874641
+512 0.0953890266668307
+1024 0.0682596550024386
+2048 0.0523323445739177
+4096 0.039453761896892
+8192 0.0319128479041022
+16384 0.0225673462866635
+};
+\addplot [semithick, color1, dashed]
+table {%
+128 0.142378269209246
+256 0.110454549582884
+512 0.0856886910573955
+1024 0.0664757749034141
+2048 0.0515707334827819
+4096 0.0400076652858323
+8192 0.0310372409606622
+16384 0.0240781440148505
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table {%
+128 0.0812774702748136
+256 0.060072147081538
+512 0.0467469308246413
+1024 0.0279027192145075
+2048 0.0193220066311106
+4096 0.0135682064890027
+8192 0.0097117203388765
+16384 0.00663061481297119
+};
+\addplot [semithick, color2, dashed]
+table {%
+128 0.0861116731727102
+256 0.0597266489200007
+512 0.0414261209866205
+1024 0.0287329614339612
+2048 0.0199290460487996
+4096 0.0138226920092455
+8192 0.00958735375063109
+16384 0.006649743181593
+};
+\addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
+table {%
+128 0.0395365942523513
+256 0.0220856665328281
+512 0.0137248578781666
+1024 0.0083087561077938
+2048 0.00515521931715878
+4096 0.0032983301125387
+8192 0.00204912166088329
+16384 0.00129381705696464
+};
+\addplot [semithick, color3, dashed]
+table {%
+128 0.0367985436022489
+256 0.0227000450406226
+512 0.0140030554039319
+1024 0.00863811328544427
+2048 0.00532862285978083
+4096 0.00328708603875626
+8192 0.0020277161492774
+16384 0.00125084428383143
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Ulrik S. Fjordholm@UiO<ulriksf@gmail.com> and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: eb89 (['git_commit'])
+Repo: Overleaf repository hidden
+Hostname: lyelaptop};
+\end{axis}
+
+\end{tikzpicture}

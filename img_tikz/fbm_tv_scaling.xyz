@@ -1,0 +1,137 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+height=\figureheight,
+legend cell align={left},
+legend entries={{fBm $H=0.125$},{$\mathcal{O}(\Delta x^{-0.88})$},{fBm $H=0.25$},{$\mathcal{O}(\Delta x^{-0.75})$},{fBm $H=0.5$},{$\mathcal{O}(\Delta x^{-0.50})$},{fBm $H=0.75$},{$\mathcal{O}(\Delta x^{-0.26})$}},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+tick align=outside,
+tick pos=left,
+title={Scaling of $\mathrm{TV}(u_0^{\Delta x})$},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={$\Delta x$},
+xmajorgrids,
+xmin=5.98590162579918e-06, xmax=0.00124468811261647,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={$\mathrm{TV}(u_0^{\Delta x})$},
+ymajorgrids,
+ymin=2.7946059249083, ymax=36944.0998329682,
+ymode=log
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addlegendimage{no markers, color3}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.0009765625	337.547312002903 \\
+0.00048828125	645.218866282882 \\
+0.000244140625	1153.65915945931 \\
+0.0001220703125	2122.0415756954 \\
+6.103515625e-05	3869.20400635669 \\
+3.0517578125e-05	7116.4151156148 \\
+1.52587890625e-05	13095.0878483157 \\
+7.62939453125e-06	24000.3017580145 \\
+};
+\addplot [semithick, color0, dashed]
+table [row sep=\\]{%
+0.0009765625	343.447323905834 \\
+0.00048828125	629.986969855243 \\
+0.000244140625	1155.58793026498 \\
+0.0001220703125	2119.70013424397 \\
+6.103515625e-05	3888.17548317903 \\
+3.0517578125e-05	7132.09776409557 \\
+1.52587890625e-05	13082.4389837023 \\
+7.62939453125e-06	23997.1766264757 \\
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.0009765625	141.946175302637 \\
+0.00048828125	248.211602491463 \\
+0.000244140625	408.593360946246 \\
+0.0001220703125	688.168604894167 \\
+6.103515625e-05	1150.90608977232 \\
+3.0517578125e-05	1939.07566397569 \\
+1.52587890625e-05	3272.8383308628 \\
+7.62939453125e-06	5502.22373031508 \\
+};
+\addplot [semithick, color1, dashed]
+table [row sep=\\]{%
+0.0009765625	144.383457822033 \\
+0.00048828125	242.868196650029 \\
+0.000244140625	408.529909407916 \\
+0.0001220703125	687.190373967888 \\
+6.103515625e-05	1155.92665114418 \\
+3.0517578125e-05	1944.39048252418 \\
+1.52587890625e-05	3270.66976506544 \\
+7.62939453125e-06	5501.61133180726 \\
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.0009765625	25.0602424716473 \\
+0.00048828125	36.5571184366669 \\
+0.000244140625	51.197014924869 \\
+0.0001220703125	72.3257725594077 \\
+6.103515625e-05	101.710491054961 \\
+3.0517578125e-05	144.059779840785 \\
+1.52587890625e-05	204.271612094146 \\
+7.62939453125e-06	288.980196525743 \\
+};
+\addplot [semithick, color2, dashed]
+table [row sep=\\]{%
+0.0009765625	25.4514766825331 \\
+0.00048828125	36.0156027288163 \\
+0.000244140625	50.9645729440175 \\
+0.0001220703125	72.1184014307193 \\
+6.103515625e-05	102.0525342307 \\
+3.0517578125e-05	144.411405914386 \\
+1.52587890625e-05	204.352143877442 \\
+7.62939453125e-06	289.17244065932 \\
+};
+\addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.0009765625	4.3017875910306 \\
+0.00048828125	5.27180684454449 \\
+0.000244140625	6.31356841776418 \\
+0.0001220703125	7.5365776809605 \\
+6.103515625e-05	8.95391015531229 \\
+3.0517578125e-05	10.67301744328 \\
+1.52587890625e-05	12.7162034757939 \\
+7.62939453125e-06	15.1436886679118 \\
+};
+\addplot [semithick, color3, dashed]
+table [row sep=\\]{%
+0.0009765625	4.38063743572055 \\
+0.00048828125	5.23458054134283 \\
+0.000244140625	6.25498773771447 \\
+0.0001220703125	7.474308837155 \\
+6.103515625e-05	8.93131928242376 \\
+3.0517578125e-05	10.6723532386116 \\
+1.52587890625e-05	12.752777058799 \\
+7.62939453125e-06	15.2387499809357 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Ulrik S. Fjordholm@UiO<ulriksf@gmail.com> and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: d147fd70d2e9431c0f6c90a33f42b6819bdfe394
+Repo: https://git.overleaf.com/10986714wnmkchhxqsbw
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}

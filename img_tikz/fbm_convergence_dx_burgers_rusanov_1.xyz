@@ -1,0 +1,114 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+height=\figureheight,
+legend cell align={left},
+legend entries={{fBm $H=0.125$},{$\mathcal{O}(\Delta x^{0.45})$},{fBm $H=0.25$},{$\mathcal{O}(\Delta x^{0.47})$},{fBm $H=0.5$},{$\mathcal{O}(\Delta x^{0.52})$},{fBm $H=0.75$},{$\mathcal{O}(\Delta x^{0.98})$}},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+tick align=outside,
+tick pos=left,
+title={Convergence plot,
+ Equation: Burgers, Numerical flux: Rusanov, T = 1},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={$\Delta x$},
+xmajorgrids,
+xmin=0.00170029406893774, xmax=0.0358968235936573,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={Error ($||\cdot||_{L^1([0,1])}$)},
+ymajorgrids,
+ymin=0.00255278735110138, ymax=0.0580728272025348,
+ymode=log
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addlegendimage{no markers, color3}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.03125	0.050384046664076 \\
+0.015625	0.042424040670076 \\
+0.0078125	0.020480144886505 \\
+0.00390625	0.0200012274591604 \\
+0.001953125	0.0152925852461635 \\
+};
+\addplot [semithick, color0, dashed]
+table [row sep=\\]{%
+0.03125	0.0498644533577432 \\
+0.015625	0.0364395577218719 \\
+0.0078125	0.0266290168156319 \\
+0.00390625	0.0194597459711094 \\
+0.001953125	0.0142206419366491 \\
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.03125	0.0480046251952404 \\
+0.015625	0.0333504288707849 \\
+0.0078125	0.0175539762889624 \\
+0.00390625	0.0163770129812281 \\
+0.001953125	0.0133585059672036 \\
+};
+\addplot [semithick, color1, dashed]
+table [row sep=\\]{%
+0.03125	0.0438262127752776 \\
+0.015625	0.0316040129458584 \\
+0.0078125	0.0227903250368332 \\
+0.00390625	0.016434587473885 \\
+0.001953125	0.0118513301148736 \\
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.03125	0.0496896643227521 \\
+0.015625	0.0226998330606723 \\
+0.0078125	0.0158769934605173 \\
+0.00390625	0.0121654500921911 \\
+0.001953125	0.0112403293436859 \\
+};
+\addplot [semithick, color2, dashed]
+table [row sep=\\]{%
+0.03125	0.0389194369768012 \\
+0.015625	0.0271631227038133 \\
+0.0078125	0.0189580141013402 \\
+0.00390625	0.0132314057770743 \\
+0.001953125	0.00923462225008149 \\
+};
+\addplot [semithick, color3, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+0.03125	0.0404443154459783 \\
+0.015625	0.0245043723560743 \\
+0.0078125	0.0136276015539588 \\
+0.00390625	0.00503509353651462 \\
+0.001953125	0.00295550658343669 \\
+};
+\addplot [semithick, color3, dashed]
+table [row sep=\\]{%
+0.03125	0.0449334149037016 \\
+0.015625	0.0227300667064114 \\
+0.0078125	0.0114982565555095 \\
+0.00390625	0.00581652071346646 \\
+0.001953125	0.00294235156841874 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Ulrik S. Fjordholm@UiO<ulriksf@gmail.com> and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: b9ca36e3a23976dac7abac4c0a733ac5301d7405
+Repo: https://git.overleaf.com/10986714wnmkchhxqsbw
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}

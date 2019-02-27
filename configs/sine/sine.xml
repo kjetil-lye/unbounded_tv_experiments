@@ -1,0 +1,42 @@
+<config>
+<fvm>
+  <name>
+    sine
+  </name>
+  <platform>cpu</platform>
+  <grid>
+    <lowerCorner>0 0 0</lowerCorner>
+    <upperCorner>1 0 0</upperCorner>
+    <dimension>4096 1 1</dimension>
+  </grid>
+  <boundary>periodic</boundary>
+  <flux>godunov</flux>
+  <endTime>0.5</endTime>
+  <equation>burgers</equation>
+  <reconstruction>none</reconstruction>
+  <cfl>auto</cfl>
+  <integrator>auto</integrator>
+  <initialData>
+    <python>sine.py</python>
+  </initialData>
+  <writer>
+    <type>netcdf</type>
+    <basename>sine</basename>
+    <numberOfSaves>10</numberOfSaves>
+  </writer>
+</fvm>
+<uq>
+  <samples>1</samples>
+  <generator>auto</generator>
+  <parameters>
+    <parameter>
+      <name>a</name>
+      <length>1</length>
+      <type>normal</type>
+    </parameter>
+  </parameters>
+  <stats>
+
+  </stats>
+</uq>
+</config>

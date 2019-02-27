@@ -1,0 +1,214 @@
+% This file was created by matplotlib2tikz v0.6.17.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+title={Expecation of Convergence plot,
+ Equation: Linear, Numerical flux: Upwind, T = 0.00048828125},
+xlabel={$\Delta x$},
+ylabel={Expectation of Error ($\mathbb{E}(||\cdot||_{L^1([0,1])})$)},
+xmin=0.00158643046163327, xmax=0.153893051668115,
+ymin=0.00522677051437027, ymax=0.567272321007384,
+xmode=log,
+ymode=log,
+width=\figurewidth,
+height=\figureheight,
+tick align=outside,
+tick pos=left,
+xmajorgrids,
+x grid style={white!69.01960784313725!black},
+ymajorgrids,
+y grid style={white!69.01960784313725!black},
+legend cell align={left},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+legend entries={{$\mathcal{O}(\Delta x^{0.28})$},{$\mathcal{O}(\Delta x^{0.35})$},{$\mathcal{O}(\Delta x^{0.55})$},{$\mathcal{O}(\Delta x^{0.75})$},{fBm $H=0.125$},{fBm $H=0.25$},{fBm $H=0.5$},{fBm $H=0.75$}}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addlegendimage{no markers, color3}
+\addplot [semithick, color0, forget plot]
+table {%
+0.125 0.378497129226868
+0.0625 0.295379865583763
+0.03125 0.251009264899552
+0.015625 0.21220403630825
+0.0078125 0.173850058850283
+0.00390625 0.141437727714911
+0.001953125 0.113717301172283
+};
+\addplot [semithick, color1, forget plot]
+table {%
+0.125 0.334871750154439
+0.0625 0.250484230978593
+0.03125 0.199320083620927
+0.015625 0.160906440543301
+0.0078125 0.127191552888185
+0.00390625 0.0978257356672563
+0.001953125 0.0743567118072478
+};
+\addplot [semithick, color2, forget plot]
+table {%
+0.125 0.263794088033444
+0.0625 0.179580794074149
+0.03125 0.121788977306462
+0.015625 0.0853273233488062
+0.0078125 0.0588637900569648
+0.00390625 0.0396829460965951
+0.001953125 0.0260707078321585
+};
+\addplot [semithick, color3, forget plot]
+table {%
+0.125 0.215808286364256
+0.0625 0.130383470909
+0.03125 0.0783949351355001
+0.015625 0.0479835702300948
+0.0078125 0.0277592375585866
+0.00390625 0.016111404037041
+0.001953125 0.00943036128459584
+};
+\path [draw=color0, semithick] (axis cs:0.125,0.298571444645385)
+--(axis cs:0.125,0.45842281380835);
+
+\path [draw=color0, semithick] (axis cs:0.0625,0.245309351171273)
+--(axis cs:0.0625,0.345450379996254);
+
+\path [draw=color0, semithick] (axis cs:0.03125,0.208037544024059)
+--(axis cs:0.03125,0.293980985775045);
+
+\path [draw=color0, semithick] (axis cs:0.015625,0.175341707692999)
+--(axis cs:0.015625,0.249066364923502);
+
+\path [draw=color0, semithick] (axis cs:0.0078125,0.145174037901285)
+--(axis cs:0.0078125,0.202526079799281);
+
+\path [draw=color0, semithick] (axis cs:0.00390625,0.119412246031961)
+--(axis cs:0.00390625,0.163463209397862);
+
+\path [draw=color0, semithick] (axis cs:0.001953125,0.0939834225235757)
+--(axis cs:0.001953125,0.13345117982099);
+
+\path [draw=color1, semithick] (axis cs:0.125,0.255294518482173)
+--(axis cs:0.125,0.414448981826704);
+
+\path [draw=color1, semithick] (axis cs:0.0625,0.195968373523972)
+--(axis cs:0.0625,0.305000088433215);
+
+\path [draw=color1, semithick] (axis cs:0.03125,0.158804770787229)
+--(axis cs:0.03125,0.239835396454626);
+
+\path [draw=color1, semithick] (axis cs:0.015625,0.126797905605541)
+--(axis cs:0.015625,0.19501497548106);
+
+\path [draw=color1, semithick] (axis cs:0.0078125,0.100785328060312)
+--(axis cs:0.0078125,0.153597777716058);
+
+\path [draw=color1, semithick] (axis cs:0.00390625,0.078821930601864)
+--(axis cs:0.00390625,0.116829540732649);
+
+\path [draw=color1, semithick] (axis cs:0.001953125,0.0571293549247575)
+--(axis cs:0.001953125,0.0915840686897381);
+
+\path [draw=color2, semithick] (axis cs:0.125,0.18895544950237)
+--(axis cs:0.125,0.338632726564518);
+
+\path [draw=color2, semithick] (axis cs:0.0625,0.123668950874409)
+--(axis cs:0.0625,0.235492637273889);
+
+\path [draw=color2, semithick] (axis cs:0.03125,0.0875952827528071)
+--(axis cs:0.03125,0.155982671860117);
+
+\path [draw=color2, semithick] (axis cs:0.015625,0.062332790208035)
+--(axis cs:0.015625,0.108321856489577);
+
+\path [draw=color2, semithick] (axis cs:0.0078125,0.0430193230981224)
+--(axis cs:0.0078125,0.0747082570158073);
+
+\path [draw=color2, semithick] (axis cs:0.00390625,0.0292224633954587)
+--(axis cs:0.00390625,0.0501434287977314);
+
+\path [draw=color2, semithick] (axis cs:0.001953125,0.0181917963352612)
+--(axis cs:0.001953125,0.0339496193290557);
+
+\path [draw=color3, semithick] (axis cs:0.125,0.148964968720059)
+--(axis cs:0.125,0.282651604008453);
+
+\path [draw=color3, semithick] (axis cs:0.0625,0.0904486522816402)
+--(axis cs:0.0625,0.17031828953636);
+
+\path [draw=color3, semithick] (axis cs:0.03125,0.0526535689905687)
+--(axis cs:0.03125,0.104136301280431);
+
+\path [draw=color3, semithick] (axis cs:0.015625,0.0323591326261078)
+--(axis cs:0.015625,0.0636080078340819);
+
+\path [draw=color3, semithick] (axis cs:0.0078125,0.0191670375905663)
+--(axis cs:0.0078125,0.0363514375266069);
+
+\path [draw=color3, semithick] (axis cs:0.00390625,0.0113934597981286)
+--(axis cs:0.00390625,0.0208293482759535);
+
+\path [draw=color3, semithick] (axis cs:0.001953125,0.00646783308279971)
+--(axis cs:0.001953125,0.012392889486392);
+
+\addplot [semithick, color0, dashed]
+table {%
+0.125 0.372250158515575
+0.0625 0.306436219303471
+0.03125 0.252258204201883
+0.015625 0.207658878352562
+0.0078125 0.170944726634673
+0.00390625 0.140721647906573
+0.001953125 0.115842018524863
+};
+\addplot [semithick, color1, dashed]
+table {%
+0.125 0.329537262729949
+0.0625 0.258075388304771
+0.03125 0.202110394123285
+0.015625 0.158281700866531
+0.0078125 0.123957488371033
+0.00390625 0.0970766604044237
+0.001953125 0.0760250802038516
+};
+\addplot [semithick, color2, dashed]
+table {%
+0.125 0.264643822460782
+0.0625 0.180659772795186
+0.03125 0.123327849495692
+0.015625 0.0841900674727157
+0.0078125 0.0574725618750693
+0.00390625 0.0392337893012634
+0.001953125 0.0267830452082848
+};
+\addplot [semithick, color3, dashed]
+table {%
+0.125 0.220873047619804
+0.0625 0.131072433314448
+0.03125 0.0777821602051817
+0.015625 0.0461581760038758
+0.0078125 0.0273915921900925
+0.00390625 0.0162549603919647
+0.001953125 0.0096461620599006
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Ulrik S. Fjordholm@UiO<ulriksf@gmail.com> and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: eb89 (['git_commit'])
+Repo: Overleaf repository hidden
+Hostname: lyelaptop};
+\end{axis}
+
+\end{tikzpicture}
