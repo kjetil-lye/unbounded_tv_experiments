@@ -18,41 +18,29 @@ import traceback
 import inspect
 import copy
 from IPython.core.display import display, HTML
-try:
-    import git
-    def get_git_metadata():
-        if not get_git_metadata.cached:
-            get_git_metadata.repo = git.Repo(search_parent_directories=True)
-            get_git_metadata.sha = get_git_metadata.repo.head.object.hexsha
-            get_git_metadata.modified= get_git_metadata.repo.is_dirty()
-            get_git_metadata.activeBranch = get_git_metadata.repo.active_branch
-            get_git_metadata.url = get_git_metadata.repo.remotes.origin.url
-            get_git_metadata.cached = True
-            get_git_metadata.short_sha = get_git_metadata.repo.git.rev_parse(get_git_metadata.sha, short=1)
 
-        return {'git_commit': str(get_git_metadata.sha),
-                'git_repo_modified':str(get_git_metadata.modified),
-                'git_branch' : str(get_git_metadata.activeBranch),
-                'git_remote_url' : str(get_git_metadata.url),
-                'git_short_commit' : str(get_git_metadata.short_sha)}
+import git
+def get_git_metadata():
+    if not get_git_metadata.cached:
+        get_git_metadata.repo = git.Repo(search_parent_directories=True)
+        get_git_metadata.sha = get_git_metadata.repo.head.object.hexsha
+        get_git_metadata.modified= get_git_metadata.repo.is_dirty()
+        get_git_metadata.activeBranch = get_git_metadata.repo.active_branch
+        get_git_metadata.url = get_git_metadata.repo.remotes.origin.url
+        get_git_metadata.cached = True
+        get_git_metadata.short_sha = get_git_metadata.repo.git.rev_parse(get_git_metadata.sha, short=1)
 
-    get_git_metadata.cached = False
+    return {'git_commit': str(get_git_metadata.sha),
+            'git_repo_modified':str(get_git_metadata.modified),
+            'git_branch' : str(get_git_metadata.activeBranch),
+            'git_remote_url' : str(get_git_metadata.url),
+            'git_short_commit' : str(get_git_metadata.short_sha)}
+
+get_git_metadata.cached = False
 
 
-    def add_git_information(filename):
-        writeMetadata(filename, get_git_metadata())
-
-except:
-    def add_git_information(filename):
-        pass
-
-    def get_git_metadata():
-        return {'git_commit': 'unknown',
-                'git_repo_modified':'unknown',
-                'git_branch' : 'unknown',
-                'git_remote_url' : 'unknown',
-                'git_short_commit': "unknown"}
-
+def add_git_information(filename):
+    writeMetadata(filename, get_git_metadata())
 
 def get_stacktrace_str():
     trace = ""
@@ -175,6 +163,7 @@ def savePlot(name):
         return
 
 
+    alsvinn_commit = get_alsvinn_sha()
 
 
     name = showAndSave.prefix + name
@@ -199,8 +188,10 @@ def savePlot(name):
 
     if gitMetadata['git_short_commit'] != "unkown":
         if not name.endswith("_notitle"):
-            ax.text(0.2, 0.93, "@" + gitMetadata['git_short_commit'], fontsize=10,
-            ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
+            ax.text(0.05, 0.93, "@" + gitMetadata['git_short_commit'], fontsize=10,
+            ha='left', va='bottom', alpha=0.5, transform=ax.transAxes)
+            ax.text(0.05, 0.87, "alsvinn@" + alsvinn_commit['alsvinn_git_short_commit'], fontsize=10,
+            ha='left', va='bottom', alpha=0.5, transform=ax.transAxes)
 
     # We don't want all the output from matplotlib2tikz
 
@@ -224,6 +215,10 @@ def savePlot(name):
                 f.write("%% DO NOT REMOVE THE COMMENTS BELOW!\n")
                 for k in gitMetadata.keys():
                     f.write("%% GIT {} : {}\n".format(k, gitMetadata[k]))
+
+                f.write("%% ALSVINN INFO:\n")
+                for k in alsvinn_commit.keys():
+                    f.write("%% ALSVINN GIT {} : {}\n".format(k, alsvinn_commit[k]))
 
                 f.write("%% working_directory : {}\n".format(os.getcwd()))
                 f.write("%% hostname : {}\n".format(socket.gethostname()))
@@ -253,7 +248,8 @@ def savePlot(name):
                                 **gitMetadata,
                                 "modules_loaded": get_loaded_python_modules_formatted(),
                                 "python_version": get_python_description(),
-                                'stacktrace': get_stacktrace_str()})
+                                'stacktrace': get_stacktrace_str(),
+                                **alsvinn_commit})
 
     if savePlot.callback is not None:
         title = 'Unknown title'
@@ -337,3 +333,19 @@ def to_percent(y, position):
 def set_percentage_ticks(ax):
     """ ax is either plt.gca().xaxis or plt.gca().yaxis"""
     ax.set_major_formatter(matplotlib.ticker.FuncFormatter(to_percent))
+
+
+def set_alsvinn_sha(alsvinn_commit_sha, alsvinn_short_commit_sha):
+    set_alsvinn_sha.alsvinn_commit_sha = alsvinn_commit_sha
+    set_alsvinn_sha.alsvinn_short_commit_sha = alsvinn_short_commit_sha
+    
+set_alsvinn_sha.alsvinn_commit_sha = "unknown"
+set_alsvinn_sha.alsvinn_short_commit_sha = "unknown"
+    
+
+def get_alsvinn_sha():
+    
+    return {"alsvinn_git_commit" : set_alsvinn_sha.alsvinn_commit_sha,
+            "alsvinn_git_short_commit":  set_alsvinn_sha.alsvinn_short_commit_sha}
+    
+    
