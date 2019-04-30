@@ -269,7 +269,7 @@ def savePlot(name):
         title = "None"
 
 savePlot.callback = None
-savePlot.saveTikz = False
+savePlot.saveTikz = True
 
 def showAndSave(name):
     savePlot(name)
