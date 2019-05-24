@@ -47,3 +47,10 @@ with the above output ```TOKEN_FROM_OUTPUT``` would bee ```52178bd3b7b268da88d26
 
 Open the notebook ```run_tv_experiments.ipynb``` and run all cells in order.
 
+## Running without Docker
+
+First download and compile [Alsvinn](https://github.com/alsvinn/alsvinn) (last tested with version 0.4.1), then export the environment variable ```ALSVINN_BUILD_PATH``` to the alsvinn build folder, on bash you would do
+
+    export ALSVINN_BUILD_PATH=<path to build folder of alsvinn>
+
+Then make sure you have the necessary packages installed (see ```requirements.txt```). From the ```notebook``` folder, run ```jupyter notebook``` and open ```rurn_tv_experiments.ipynb```. Run the cells in order. 
