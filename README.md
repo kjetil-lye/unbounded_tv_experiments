@@ -12,11 +12,11 @@ These files were last tested with
 
 ## Running in Docker
 
-This guide assumes you are running a POSIX-compliant shell (eg. BASH). If not, replace ```$(pwd)``` with the full path to the notebook folder, and ```$(user -id)``` with the ID of the current user.
+This guide assumes you are running a POSIX-compliant shell (eg. BASH). If not, replace ```$(pwd)``` with the full path to the notebook folder, ```$(dirname $(pwd))``` with the complete path to this repository, and ```$(user -id)``` with the ID of the current user. If you are using OS X or Linux, you have POSIX complaint shell. If you are using Windows, you can get one by installing eg. BASH from the git package.
 
 Go to the ```notebook``` folder in the command line, and run
 
-    docker run -p 8888:8888 --rm -w $(pwd) -e "HOME=$(pwd)" -e "ALSVINN_BUILD_PATH=/alsvinn/build_docker" -v $(pwd):$(pwd) --user $(id -u) -it --entrypoint 'jupyter' alsvinn/alsvinn_cuda:release-0.4.1  notebook --ip=0.0.0.0 
+    docker run -p 8888:8888 --rm -w $(pwd) -e "HOME=$(pwd)" -e "ALSVINN_BUILD_PATH=/alsvinn/build_docker" -v $(dirname $(pwd)):$(dirname $(pwd)) --user $(id -u) -it --entrypoint 'jupyter' alsvinn/alsvinn_cpu:release-0.4.1  notebook --ip=0.0.0.0 
 
 To make life easier for everyone, we have made a script in the ```notebook``` folder, so you can simply run
 
