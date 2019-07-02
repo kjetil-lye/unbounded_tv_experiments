@@ -32,7 +32,7 @@
     <parameter>
       <name>a</name>
       <length>1</length>
-      <type>normal</type>
+      <type>uniform</type>
     </parameter>
   </parameters>
   <stats>
