@@ -25,6 +25,13 @@
         <length>1048576</length>
         <values><value>0</value></values>
       </parameter>
+
+      <parameter>
+        <name>hurst</name>
+        <length>1</length>
+        <value>HURST_INDEX</value>
+      </parameter>
+
     </parameters>
   </initialData>
   <writer>
@@ -40,7 +47,7 @@
     <parameter>
       <name>X</name>
       <length>1048576</length>
-      <type>normal</type>
+      <type>uniform</type>
     </parameter>
   </parameters>
   <stats>

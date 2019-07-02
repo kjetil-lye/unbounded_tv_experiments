@@ -6,5 +6,5 @@ do
 
     H_filename=${H//./_};
     cp -r fractional_brownian_template fractional_brownian_${H_filename}
-    sed -i "s/HURZ_INDEX/${H}/g" fractional_brownian_${H_filename}/fractional_brownian.py
+    sed -i "s/HURST_INDEX/${H}/g" fractional_brownian_${H_filename}/fractional_brownian.xml
 done
