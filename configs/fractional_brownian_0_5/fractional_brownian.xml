@@ -38,7 +38,7 @@
     <type>netcdf</type>
     <basename>fractional_brownian</basename>
     <numberOfSaves>1</numberOfSaves>
-    <writeInitialData>true</writeInitialData>
+    <writeInitialTimestep>true</writeInitialTimestep>
   </writer>
 </fvm>
 <uq>
