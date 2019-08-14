@@ -8,7 +8,7 @@ matplotlib.rcParams['savefig.dpi']=300
 from numpy import *
 import matplotlib.pyplot as plt
 
-import matplotlib2tikz
+import tikzplotlib
 import PIL
 import socket
 import os
@@ -197,7 +197,7 @@ def savePlot(name):
 
     with RedirectStdStreamsToNull():
         if savePlot.saveTikz:
-            matplotlib2tikz.save('img_tikz/' + name + '.xyz',
+            tikzplotlib.save('img_tikz/' + name + '.xyz',
                 figureheight = '\\figureheight',
                 figurewidth = '\\figurewidth',
                 show_info = False)

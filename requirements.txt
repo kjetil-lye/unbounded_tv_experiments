@@ -6,6 +6,7 @@ cycler==0.10.0
 Cython==0.29.7
 decorator==4.4.0
 defusedxml==0.6.0
+dicttoxml==1.7.4
 entrypoints==0.3
 gitdb2==2.0.5
 GitPython==2.1.11
@@ -24,7 +25,6 @@ jupyter-core==4.4.0
 kiwisolver==1.1.0
 MarkupSafe==1.1.1
 matplotlib==3.1.0
-matplotlib2tikz==0.7.4
 mistune==0.8.4
 mpi4py==3.0.1
 nbconvert==5.5.0
@@ -53,6 +53,7 @@ smmap2==2.0.5
 tabulate==0.8.3
 terminado==0.8.2
 testpath==0.4.2
+tikzplotlib==0.8.2
 tornado==6.0.2
 traitlets==4.3.2
 wcwidth==0.1.7
