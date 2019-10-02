@@ -16,7 +16,7 @@ This guide assumes you are running a POSIX-compliant shell (eg. BASH). If not, r
 
 Go to the ```notebook``` folder in the command line, and run
 
-    docker run -p 8888:8888 --rm -w $(pwd) -e "HOME=$(pwd)" -e "ALSVINN_BUILD_PATH=/alsvinn/build_docker" -v $(dirname $(pwd)):$(dirname $(pwd)) --user $(id -u) -it --entrypoint 'jupyter' alsvinn/alsvinn_cpu:release-0.5.3  notebook --ip=0.0.0.0 
+    docker run -p 8888:8888 --rm -w $(pwd) -e "HOME=$(pwd)" -e "ALSVINN_BUILD_PATH=/alsvinn/build_docker" -v $(dirname $(pwd)):$(dirname $(pwd)) --user $(id -u) -it --entrypoint 'jupyter' alsvinn/alsvinn_cpu:release-0.5.4  notebook --ip=0.0.0.0 
 
 To make life easier for everyone, we have made a script in the ```notebook``` folder, so you can simply run
 
@@ -49,7 +49,7 @@ Open the notebook ```run_tv_experiments.ipynb``` and run all cells in order.
 
 ## Running without Docker
 
-First download and compile [Alsvinn](https://github.com/alsvinn/alsvinn) (last tested with version 0.5.3), then make sure the ```PYTHONPATH``` contains the ```python``` folder of the ```build``` folder:
+First download and compile [Alsvinn](https://github.com/alsvinn/alsvinn) (last tested with version 0.5.4), then make sure the ```PYTHONPATH``` contains the ```python``` folder of the ```build``` folder:
 
     export PYTHONPATH=$PYTHONPATH:<path to build folder of alsvinn>/python
 
