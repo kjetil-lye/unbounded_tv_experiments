@@ -133,7 +133,7 @@ table {%
   align=right
 ]{By Ulrik S. Fjordholm@UiO <ulriksf@gmal.com>
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
-Commit: 8f64d67540ae06cdcea039393c72e220289746ac
+Commit: d489f49faae328ee586e3f3ecfb46d382e8987ab
 Repo: git@github.com:kjetil-lye/unbounded_tv_experiments.git
 Hostname: galerkin};
 \node at (axis cs:0.05,0.93)[
@@ -141,7 +141,7 @@ Hostname: galerkin};
   anchor=south west,
   text=black,
   rotate=0.0
-]{@8f64};
+]{@d489f};
 \node at (axis cs:0.05,0.87)[
   scale=0.5,
   anchor=south west,
@@ -160,20 +160,20 @@ Hostname: galerkin};
 
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 8f64d67540ae06cdcea039393c72e220289746ac
+%% GIT git_commit : d489f49faae328ee586e3f3ecfb46d382e8987ab
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/unbounded_tv_experiments.git
-%% GIT git_short_commit : 8f64
+%% GIT git_short_commit : d489f
 %% ALSVINN INFO:
 %% ALSVINN GIT alsvinn_git_commit : e3c345149430d5e47630866b5d1886498bf71a35
 %% ALSVINN GIT alsvinn_git_short_commit : e3c34514
 %% working_directory : /home/kjetil/projects/unbounded_tv_experiments/notebooks
 %% hostname : galerkin
-%% generated_on_date : 2019-08-30 00:59:00.198595
+%% generated_on_date : 2019-10-17 03:08:18.705051
 %% python_version: 
-%%    /usr/bin/python3 (Version: 3.7.4 (default, Jul 16 2019, 07:12:58) 
-%%    [GCC 9.1.0])
+%%    /usr/bin/python3 (Version: 3.7.4 (default, Oct  4 2019, 06:57:26) 
+%%    [GCC 9.2.0])
 %% python modules:
 %%     sys: Unknown (Unknown)
 %%     builtins: Unknown (Unknown)
@@ -636,7 +636,7 @@ Hostname: galerkin};
 %%     unicodedata: Unknown (/usr/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so)
 %%     IPython.core.latex_symbols: Unknown (/usr/lib/python3.7/site-packages/IPython/core/latex_symbols.py)
 %%     IPython.utils.generics: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/generics.py)
-%%     jedi: 0.13.3 (/usr/lib/python3.7/site-packages/jedi/__init__.py)
+%%     jedi: 0.15.1 (/usr/lib/python3.7/site-packages/jedi/__init__.py)
 %%     jedi.api: Unknown (/usr/lib/python3.7/site-packages/jedi/api/__init__.py)
 %%     parso: 0.5.1 (/usr/lib/python3.7/site-packages/parso/__init__.py)
 %%     parso.parser: Unknown (/usr/lib/python3.7/site-packages/parso/parser.py)
@@ -662,6 +662,7 @@ Hostname: galerkin};
 %%     parso.python.pep8: Unknown (/usr/lib/python3.7/site-packages/parso/python/pep8.py)
 %%     parso.file_io: Unknown (/usr/lib/python3.7/site-packages/parso/file_io.py)
 %%     jedi._compatibility: Unknown (/usr/lib/python3.7/site-packages/jedi/_compatibility.py)
+%%     jedi.file_io: Unknown (/usr/lib/python3.7/site-packages/jedi/file_io.py)
 %%     jedi.parser_utils: Unknown (/usr/lib/python3.7/site-packages/jedi/parser_utils.py)
 %%     jedi.debug: Unknown (/usr/lib/python3.7/site-packages/jedi/debug.py)
 %%     colorama: 0.4.1 (/usr/lib/python3.7/site-packages/colorama/__init__.py)
@@ -691,25 +692,32 @@ Hostname: galerkin};
 %%     jedi.evaluate.filters: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/filters.py)
 %%     jedi.evaluate.flow_analysis: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/flow_analysis.py)
 %%     jedi.evaluate.recursion: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/recursion.py)
+%%     jedi.evaluate.names: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/names.py)
 %%     jedi.evaluate.lazy_context: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/lazy_context.py)
 %%     jedi.evaluate.compiled.access: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/compiled/access.py)
 %%     jedi.evaluate.compiled.getattr_static: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/compiled/getattr_static.py)
-%%     jedi.evaluate.compiled.fake: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/compiled/fake.py)
+%%     jedi.evaluate.signature: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/signature.py)
 %%     jedi.evaluate.analysis: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/analysis.py)
+%%     jedi.evaluate.gradual: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/__init__.py)
+%%     jedi.evaluate.gradual.typeshed: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/typeshed.py)
+%%     jedi.evaluate.gradual.stub_context: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/stub_context.py)
 %%     jedi.evaluate.context: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/__init__.py)
 %%     jedi.evaluate.context.module: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/module.py)
 %%     jedi.evaluate.context.klass: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/klass.py)
-%%     jedi.evaluate.context.function: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/function.py)
-%%     jedi.evaluate.docstrings: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/docstrings.py)
-%%     jedi.evaluate.pep0484: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/pep0484.py)
 %%     jedi.evaluate.arguments: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/arguments.py)
 %%     jedi.evaluate.context.iterable: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/iterable.py)
 %%     jedi.evaluate.param: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/param.py)
-%%     jedi.evaluate.context.asynchronous: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/asynchronous.py)
+%%     jedi.evaluate.docstrings: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/docstrings.py)
+%%     jedi.evaluate.context.function: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/function.py)
 %%     jedi.evaluate.parser_cache: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/parser_cache.py)
+%%     jedi.plugins: Unknown (/usr/lib/python3.7/site-packages/jedi/plugins/__init__.py)
 %%     jedi.evaluate.context.instance: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/instance.py)
+%%     jedi.evaluate.gradual.typing: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/typing.py)
 %%     jedi.evaluate.syntax_tree: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/syntax_tree.py)
 %%     jedi.evaluate.finder: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/finder.py)
+%%     jedi.evaluate.gradual.conversion: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/conversion.py)
+%%     jedi.evaluate.gradual.annotation: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/annotation.py)
+%%     jedi.evaluate.context.decorator: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/context/decorator.py)
 %%     jedi.api.keywords: Unknown (/usr/lib/python3.7/site-packages/jedi/api/keywords.py)
 %%     pydoc_data: Unknown (/usr/lib/python3.7/pydoc_data/__init__.py)
 %%     pydoc_data.topics: Unknown (/usr/lib/python3.7/pydoc_data/topics.py)
@@ -717,6 +725,7 @@ Hostname: galerkin};
 %%     jedi.evaluate.compiled.mixed: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/compiled/mixed.py)
 %%     jedi.api.helpers: Unknown (/usr/lib/python3.7/site-packages/jedi/api/helpers.py)
 %%     jedi.api.completion: Unknown (/usr/lib/python3.7/site-packages/jedi/api/completion.py)
+%%     jedi.api.file_name: Unknown (/usr/lib/python3.7/site-packages/jedi/api/file_name.py)
 %%     jedi.api.environment: Unknown (/usr/lib/python3.7/site-packages/jedi/api/environment.py)
 %%     filecmp: Unknown (/usr/lib/python3.7/filecmp.py)
 %%     jedi.evaluate.compiled.subprocess: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/compiled/subprocess/__init__.py)
@@ -724,6 +733,10 @@ Hostname: galerkin};
 %%     jedi.api.exceptions: Unknown (/usr/lib/python3.7/site-packages/jedi/api/exceptions.py)
 %%     jedi.api.project: Unknown (/usr/lib/python3.7/site-packages/jedi/api/project.py)
 %%     jedi.evaluate.usages: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/usages.py)
+%%     jedi.evaluate.gradual.utils: Unknown (/usr/lib/python3.7/site-packages/jedi/evaluate/gradual/utils.py)
+%%     jedi.plugins.registry: Unknown (/usr/lib/python3.7/site-packages/jedi/plugins/registry.py)
+%%     jedi.plugins.stdlib: Unknown (/usr/lib/python3.7/site-packages/jedi/plugins/stdlib.py)
+%%     jedi.plugins.flask: Unknown (/usr/lib/python3.7/site-packages/jedi/plugins/flask.py)
 %%     IPython.terminal.ptutils: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/ptutils.py)
 %%     IPython.terminal.shortcuts: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/shortcuts.py)
 %%     IPython.terminal.magics: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/magics.py)
@@ -1006,12 +1019,12 @@ Hostname: galerkin};
 %%     alsvinn: Unknown (/home/kjetil/projects/unbounded_tv_experiments/alsvinn_build_folder/python/alsvinn/__init__.py)
 %%     alsvinn.alsvinn: Unknown (/home/kjetil/projects/unbounded_tv_experiments/alsvinn_build_folder/python/alsvinn/alsvinn.py)
 %%     alsvinn.config: Unknown (/home/kjetil/projects/unbounded_tv_experiments/alsvinn_build_folder/python/alsvinn/config.py)
-%%     numpy: 1.17.0 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
+%%     numpy: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
 %%     numpy._globals: Unknown (/usr/lib/python3.7/site-packages/numpy/_globals.py)
 %%     numpy.__config__: Unknown (/usr/lib/python3.7/site-packages/numpy/__config__.py)
 %%     numpy.version: Unknown (/usr/lib/python3.7/site-packages/numpy/version.py)
 %%     numpy._distributor_init: Unknown (/usr/lib/python3.7/site-packages/numpy/_distributor_init.py)
-%%     numpy.core: 1.17.0 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
+%%     numpy.core: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
 %%     numpy.core.info: Unknown (/usr/lib/python3.7/site-packages/numpy/core/info.py)
 %%     numpy.core.multiarray: Unknown (/usr/lib/python3.7/site-packages/numpy/core/multiarray.py)
 %%     numpy.core.overrides: Unknown (/usr/lib/python3.7/site-packages/numpy/core/overrides.py)
@@ -1044,7 +1057,7 @@ Hostname: galerkin};
 %%     numpy.core._dtype_ctypes: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_dtype_ctypes.py)
 %%     numpy.core._internal: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_internal.py)
 %%     numpy._pytesttester: Unknown (/usr/lib/python3.7/site-packages/numpy/_pytesttester.py)
-%%     numpy.lib: 1.17.0 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
+%%     numpy.lib: 1.17.2 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
 %%     numpy.lib.info: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/info.py)
 %%     numpy.lib.type_check: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/type_check.py)
 %%     numpy.lib.ufunclike: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/ufunclike.py)
@@ -1090,6 +1103,7 @@ Hostname: galerkin};
 %%     numpy.polynomial.hermite_e: Unknown (/usr/lib/python3.7/site-packages/numpy/polynomial/hermite_e.py)
 %%     numpy.polynomial.laguerre: Unknown (/usr/lib/python3.7/site-packages/numpy/polynomial/laguerre.py)
 %%     numpy.random: Unknown (/usr/lib/python3.7/site-packages/numpy/random/__init__.py)
+%%     numpy.random._pickle: Unknown (/usr/lib/python3.7/site-packages/numpy/random/_pickle.py)
 %%     numpy.random.mtrand: Unknown (/usr/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.common: Unknown (/usr/lib/python3.7/site-packages/numpy/random/common.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.bounded_integers: Unknown (/usr/lib/python3.7/site-packages/numpy/random/bounded_integers.cpython-37m-x86_64-linux-gnu.so)
@@ -1098,10 +1112,10 @@ Hostname: galerkin};
 %%     _cython_0_29_13: Unknown (Unknown)
 %%     secrets: Unknown (/usr/lib/python3.7/secrets.py)
 %%     numpy.random.entropy: Unknown (/usr/lib/python3.7/site-packages/numpy/random/entropy.cpython-37m-x86_64-linux-gnu.so)
-%%     numpy.random.generator: Unknown (/usr/lib/python3.7/site-packages/numpy/random/generator.cpython-37m-x86_64-linux-gnu.so)
-%%     numpy.random.pcg64: Unknown (/usr/lib/python3.7/site-packages/numpy/random/pcg64.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.philox: Unknown (/usr/lib/python3.7/site-packages/numpy/random/philox.cpython-37m-x86_64-linux-gnu.so)
+%%     numpy.random.pcg64: Unknown (/usr/lib/python3.7/site-packages/numpy/random/pcg64.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.random.sfc64: Unknown (/usr/lib/python3.7/site-packages/numpy/random/sfc64.cpython-37m-x86_64-linux-gnu.so)
+%%     numpy.random.generator: Unknown (/usr/lib/python3.7/site-packages/numpy/random/generator.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.ctypeslib: Unknown (/usr/lib/python3.7/site-packages/numpy/ctypeslib.py)
 %%     numpy.ma: Unknown (/usr/lib/python3.7/site-packages/numpy/ma/__init__.py)
 %%     numpy.ma.core: Unknown (/usr/lib/python3.7/site-packages/numpy/ma/core.py)
@@ -1112,9 +1126,8 @@ Hostname: galerkin};
 %%     numpy.testing._private.decorators: Unknown (/usr/lib/python3.7/site-packages/numpy/testing/_private/decorators.py)
 %%     numpy.testing._private.nosetester: Unknown (/usr/lib/python3.7/site-packages/numpy/testing/_private/nosetester.py)
 %%     dicttoxml: 1.7.4 (/usr/lib/python3.7/site-packages/dicttoxml.py)
-%%     netCDF4: 1.5.1.2 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
-%%     netCDF4._netCDF4: 1.5.1.2 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
-%%     _cython_0_29_7: Unknown (Unknown)
+%%     netCDF4: 1.5.2 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
+%%     netCDF4._netCDF4: 1.5.2 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
 %%     netCDF4.utils: Unknown (/usr/lib/python3.7/site-packages/netCDF4/utils.py)
 %%     cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
 %%     cftime._cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
@@ -1223,7 +1236,7 @@ Hostname: galerkin};
 %%     PIL._binary: Unknown (/usr/lib/python3.7/site-packages/PIL/_binary.py)
 %%     PIL._imaging: Unknown (/usr/lib/python3.7/site-packages/PIL/_imaging.cpython-37m-x86_64-linux-gnu.so)
 %%     ipykernel.pylab.config: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/config.py)
-%%     plot_info: 1.17.0 (/home/kjetil/projects/unbounded_tv_experiments/python/plot_info.py)
+%%     plot_info: 1.17.2 (../python/plot_info.py)
 %%     tikzplotlib: 0.8.2 (/usr/lib/python3.7/site-packages/tikzplotlib/__init__.py)
 %%     tikzplotlib.__about__: 0.8.2 (/usr/lib/python3.7/site-packages/tikzplotlib/__about__.py)
 %%     tikzplotlib.save: 0.8.2 (/usr/lib/python3.7/site-packages/tikzplotlib/save.py)
@@ -1267,10 +1280,10 @@ Hostname: galerkin};
 %%     PIL.PngImagePlugin: 0.9 (/usr/lib/python3.7/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/usr/lib/python3.7/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 235, file: /home/kjetil/projects/unbounded_tv_experiments/python/plot_info.py]
-%%     [function: run_tv_as_function_of_lip_scaling, line: 17, file: <ipython-input-7-596d410569be>]
+%%     [function: savePlot, line: 235, file: ../python/plot_info.py]
+%%     [function: run_tv_as_function_of_lip_scaling, line: 17, file: <ipython-input-8-0f007eb77f53>]
 %%     [function: run_all_configurations, line: 20, file: <ipython-input-3-767288a9bd19>]
-%%     [function: <module>, line: 29, file: <ipython-input-7-596d410569be>]
+%%     [function: <module>, line: 57, file: <ipython-input-8-0f007eb77f53>]
 %%     [function: run_code, line: 3325, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3248, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3057, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
